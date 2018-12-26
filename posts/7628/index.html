@@ -10,7 +10,7 @@
 		
 
 <head><meta name="generator" content="Hexo 3.8.0">
-	<title>categories|xhs</title>
+	<title>多线程爬虫|xhs</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="apple-mobile-web-app-title" content="Amaze UI">
@@ -54,8 +54,8 @@
 		
 		
 			
-			<p class="page-name">分类</p>
-		
+			<p class="page-name">当前文章&nbsp;:&nbsp;《多线程爬虫》</p>
+			
 		
 	
 	
@@ -148,33 +148,210 @@
 		<!--main-->
 		<main> 
 		<div class="page-container">
-		<!--content start-->
+		<!-- content srart -->
 <div class="am-g am-g-fixed blog-fixed blog-content">
-    <div class="am-u-md-8 am-u-sm-12">
-        <article class="am-article blog-article-p">
+	<div class="am-u-md-8 am-u-sm-12">
 
-            <div class="page-header">
-	<div class="blog-text-center">
-		
-			
-			<i class="fa fa-pencil-square-o">总计3个分类</i>
-			
-		  	 		
-	</div>    	 		
-</div>  	 		
+		<article class="am-article blog-article-p">
 
-            
+			<div class="am-article-hd">
+				
 
-                <div class="category">
-                    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/categories/">categories</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/爱情/">爱情</a><span class="category-list-count">1</span></li></ul>
-                </div>
 
-            
-        </article>
-    </div>
+				<h1 class="am-article-title blog-text-center">
+					
+					
+	
+		<a href="/posts/7628/" itemprop="url">		
+			多线程爬虫		
+		</a>
+
+	
+
+
+				</h1>
+
+				<p class="am-article-meta blog-text-center">
+					<span>
+						<i class="fa fa-clock-o"></i> 
+						<a href="/posts/7628/" itemprop="url">
+	<time datetime="2018-12-25T09:26:55.000Z" itemprop="datePublished">
+  		2018-12-25
+  </time>
+</a>    
+&nbsp;
+					</span>
+					
+					<span>						
+						
+							<i class="fa fa-tags"></i>
+							
+								<a href="#爬虫" title="爬虫" rel="1">爬虫</a>&nbsp;
+													 											
+						
+					</span>
+				</p>
+			</div>
+
+			<div class="am-article-bd">
+				<div class="content" id="post-content">
+					
+						<h2 id="在参考了很多网上很多大牛的技术，也想着自己写一个博客。之前写了一个爬虫工具，就拿这个来写吧。-首先感谢-崔庆才-http-cuiqingcai-com-3179-html-文章写的都挺好的。"><a href="#在参考了很多网上很多大牛的技术，也想着自己写一个博客。之前写了一个爬虫工具，就拿这个来写吧。-首先感谢-崔庆才-http-cuiqingcai-com-3179-html-文章写的都挺好的。" class="headerlink" title="在参考了很多网上很多大牛的技术，也想着自己写一个博客。之前写了一个爬虫工具，就拿这个来写吧。 首先感谢 崔庆才 http://cuiqingcai.com/3179.html 文章写的都挺好的。"></a>在参考了很多网上很多大牛的技术，也想着自己写一个博客。之前写了一个爬虫工具，就拿这个来写吧。 首先感谢 崔庆才 <a href="http://cuiqingcai.com/3179.html" target="_blank" rel="noopener">http://cuiqingcai.com/3179.html</a> 文章写的都挺好的。</h2><h1 id="环境：Python3-7"><a href="#环境：Python3-7" class="headerlink" title="环境：Python3.7"></a>环境：Python3.7</h1><h1 id="第三方库"><a href="#第三方库" class="headerlink" title="第三方库"></a>第三方库</h1><p>requests<br>BeautifulSoup  </p>
+<p>安装方法：<br>pip install requests<br>pip install beautifulsoup4</p>
+<p>#原理<br>找到目标网址，根据获取的url进行解析遍历，在生成本地的html文本。从文本中获取你想要的资源，通过python来实现下载。</p>
+<p>#目标网址<br>（一个很羞涩的网址）  </p>
+<p><a href="http://mzitu.com" target="_blank" rel="noopener">http://mzitu.com </a></p>
+<p>#步骤</p>
+<ol>
+<li>首先获取网址</li>
+</ol>
+
+					
+				</div>
+			</div>
+		</article>
+
+		<ul class="am-pagination">
+    
+	
+		<li class="am-pagination-next">
+		<a class="pull-right" href="/posts/24187/" title="互联网经济">
+			下一篇 &raquo;
+		</a>
+		</li>
+	 
+ </ul>
+        
+
+		<div class="theme-annie-comment-button-container">
+	<button id="annie-comment-button" class="theme-annie-comment-button" onclick="Annie_Comment()">
+		加载评论
+		<!--加载评论-->
+	</button>
 </div>
 
+<div id="annie-comment-container" class="theme-annie-comment-main-container">
 
+	
+		
+			<!-- comment gitalk -->
+			<!-- show gitalk comment -->
+
+  <div id="gitalk-container"></div>
+
+
+<!-- gitalk`s css & js -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<link rel="stylesheet" href="/css/comment.css">
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<script type="text/javascript">
+	//thanks O-R
+	//https://github.com/gitalk/gitalk/issues/102#issuecomment-382970552
+	//去除尾部匹配正则数组的字符串  
+	//remove redundant characters
+	String.prototype.trimEnd = function(regStr) {
+		var result = this;
+		if(regStr == undefined || regStr == null || regStr == "") {
+			return result;
+		}
+		var array = regStr.split(',');
+
+		if(array.length > 0) {
+
+			var c = array.shift();
+			var str = this;
+			var i = str.length;
+			var rg = new RegExp(c);
+			var matchArr = str.match(rg);
+
+			if(matchArr != undefined && matchArr != null && matchArr.length > 0) {
+				var matchStr = matchArr[0].replace(/\\/g, "\\\\").replace(/\*/g, "\\*")
+					.replace(/\+/g, "\\+").replace(/\|/g, "\\|")
+					.replace(/\{/g, "\\{").replace(/\}/g, "\\}")
+					.replace(/\(/g, "\\(").replace(/\)/g, "\\)")
+					.replace(/\^/g, "\\^").replace(/\$/g, "\\$")
+					.replace(/\[/g, "\\[").replace(/\]/g, "\\]")
+					.replace(/\?/g, "\\?").replace(/\,/g, "\\,")
+					.replace(/\./g, "\\.").replace(/\&/g, "\\&");
+				matchStr = matchStr + '$';
+				result = str.replace(new RegExp(matchStr), "");
+			}
+
+			if(array.length > 0) {
+				return result.trimEnd(array.join())
+			} else {
+				return result;
+			}
+		}
+	};
+
+	//create gitalk
+	var gitalk = new Gitalk({
+		clientID: 'ec7091c35a8497c6c296',
+		clientSecret: '5f84366b1a2cacdd7dcfff365731af311fb059dc',
+		//id: window.location.pathname,
+		// id: (window.location.pathname).split("/").pop().substring(0, 49),
+		id: md5(location.href.trimEnd('#.*$,\\?.*$,index.html$')),
+		repo: 'ydccomment',
+		owner: 'xhsydc',
+		admin: 'xhsydc',
+		distractionFreeMode: 'true',
+	})
+	gitalk.render('gitalk-container');
+</script>
+		
+	
+
+</div>
+
+<script type="text/javascript">
+	/* Show Comment */
+	var Annie_Comment = function() {
+		function Show_Hidden(obj) {
+			obj.style.display = 'block';
+		}
+		
+		//var obutton = $('#annie-comment-button');
+		//var obutton = $('#annie-comment-container');
+		var obutton = document.getElementById("annie-comment-button" || "0");
+		var odiv = document.getElementById("annie-comment-container");
+		if( 'obutton' ) {
+			obutton.onclick = function() {
+				Show_Hidden(odiv);
+				$("#annie-comment-button").css("display", 'none');
+				return false;
+			}
+		}
+	};
+
+	(function Annie_Init() {
+		Annie_Comment();
+	})();
+</script>
+		
+		<!--
+	时间：2018-09-24
+	描述：The TOC module refers to 'https://github.com/codefine/hexo-theme-mellow', include toc.ejs、toc.js、toc.css. All rights reserved by codefine. 
+-->
+
+	
+		<aside class="post-widget">
+			<nav class="post-toc-wrap" id="post-toc">
+				
+					<strong>文章目录</strong>
+				
+				
+				<!--toc(post.content)-->
+				<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#在参考了很多网上很多大牛的技术，也想着自己写一个博客。之前写了一个爬虫工具，就拿这个来写吧。-首先感谢-崔庆才-http-cuiqingcai-com-3179-html-文章写的都挺好的。"><span class="post-toc-text">在参考了很多网上很多大牛的技术，也想着自己写一个博客。之前写了一个爬虫工具，就拿这个来写吧。 首先感谢 崔庆才 http://cuiqingcai.com/3179.html 文章写的都挺好的。</span></a></li></ol><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#环境：Python3-7"><span class="post-toc-text">环境：Python3.7</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#第三方库"><span class="post-toc-text">第三方库</span></a>
+			</li></nav>
+			<div class="post-toc-bar"><div>
+		</div></div></aside>
+	
+
+	</div>
+</div>
 		</div>
 		</main>
 		
@@ -252,6 +429,11 @@
 	}
 </style>
 
+
+	<script src="/js/motto.js"></script>
+	<script type="text/javascript">
+		$(".motto").html(getMingYanContent());
+	</script>	
 
 
 
@@ -593,6 +775,8 @@
 
 
 
+
+	<script type="text/javascript" src="/js/toc.js"></script>
 
 
 <script type="text/javascript" src="/js/main.js"></script>
