@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-27T08:50:33.035Z</updated>
+  <updated>2018-12-27T07:17:43.912Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>测试评论</title>
-    <link href="http://yoursite.com/posts/59148/"/>
-    <id>http://yoursite.com/posts/59148/</id>
-    <published>2018-12-27T07:59:56.000Z</published>
-    <updated>2018-12-27T08:50:33.035Z</updated>
-    
-    <content type="html"><![CDATA[<p>测试</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;测试&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>多线程爬取图片</title>
@@ -82,55 +60,6 @@
     
     
       <category term="tags" scheme="http://yoursite.com/tags/tags/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>love</title>
-    <link href="http://yoursite.com/posts/1739/"/>
-    <id>http://yoursite.com/posts/1739/</id>
-    <published>2018-12-24T09:54:36.000Z</published>
-    <updated>2018-12-25T06:40:32.093Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="I-love-you-，zyy"><a href="#I-love-you-，zyy" class="headerlink" title="I love you ，zyy"></a>I love you ，zyy</h2><p> –ydc</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;I-love-you-，zyy&quot;&gt;&lt;a href=&quot;#I-love-you-，zyy&quot; class=&quot;headerlink&quot; title=&quot;I love you ，zyy&quot;&gt;&lt;/a&gt;I love you ，zyy&lt;/h2&gt;&lt;p&gt; –ydc&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="爱情" scheme="http://yoursite.com/categories/%E7%88%B1%E6%83%85/"/>
-    
-    
-      <category term="情感" scheme="http://yoursite.com/tags/%E6%83%85%E6%84%9F/"/>
-    
-      <category term="恋爱" scheme="http://yoursite.com/tags/%E6%81%8B%E7%88%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/posts/16107/"/>
-    <id>http://yoursite.com/posts/16107/</id>
-    <published>2018-12-24T03:38:02.858Z</published>
-    <updated>2018-12-25T06:40:32.091Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
     
   </entry>
   
