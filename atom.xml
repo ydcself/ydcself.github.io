@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-09T09:39:32.595Z</updated>
+  <updated>2019-01-09T09:42:05.732Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,17 @@
     <link href="http://yoursite.com/posts/41590/"/>
     <id>http://yoursite.com/posts/41590/</id>
     <published>2019-01-09T09:26:02.000Z</published>
-    <updated>2019-01-09T09:39:32.595Z</updated>
+    <updated>2019-01-09T09:42:05.732Z</updated>
     
-    <content type="html"><![CDATA[<p>##什么是代理<br>代理是一种常用的设计模式，其目的就是为其他对象提供一个代理以控制对某个对象的访问。代理类负责为委托类预处理消息，过滤消息并转发消息，以及进行消息被委托类执行后的后续处理。</p><p>##jdk动态代理</p><p>###原理<br>jdk动态代理基于接口实现，其目的是在动态运行时，创建一个代理对象，让其去实现接口中的方法，并且可以在对该方法进行一些修饰（增强功能，打印日志等，spring aop就是运用动态代理实现的）。</p><p>###步骤<br>1、需要动态代理的接口</p><pre><code>public interface person {    public String sayHello(String name);}</code></pre><p>2、需要代理的对象</p><pre><code>public class student implements person {    @Override    public String sayHello(String name) {        return &quot;hello,my name is&quot;+name;    }}</code></pre><p>3、实际处理的类</p><pre><code>import java.lang.reflect.InvocationHandler;import java.lang.reflect.Method;import java.lang.reflect.Proxy;import net.sf.cglib.proxy.Enhancer;import net.sf.cglib.proxy.MethodInterceptor;import net.sf.cglib.proxy.MethodProxy;public class invactionhandlerimp implements InvocationHandler{    private Object student;    public invactionhandlerimp(Object student) {        super();        this.student = student;    }    @Override    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {        System.out.println(&quot;调用之前，我要说啥&quot;);        System.out.println(&quot;Method&quot;+method);        Object returnValue = method.invoke(this.student, args);        System.out.println(&quot;调用之后，我要做什么&quot;);        return returnValue;    }    public static void main(String[] args) {        person student = new student();        //传入代理的对象        invactionhandlerimp demo = new invactionhandlerimp(new student());        //将代理接口指向实际处理的对象，通过Proxy.newProxyInstance可以创建出需要的代理对象        person person = (person) Proxy.newProxyInstance(student.getClass().getClassLoader(),student.getClass().getInterfaces(),demo);        String name = student.getClass().getName();        System.out.println(name);        System.out.println(person.sayHello(&quot;ydc&quot;));    }}</code></pre><p>4、输出内容</p><pre><code>com.sun.proxy.$Proxy0调用之前，我要说啥Methodpublic abstract java.lang.String person.sayHello(java.lang.String)调用之后，我要做什么hello,my name isydc</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>##什么是代理##<br>代理是一种常用的设计模式，其目的就是为其他对象提供一个代理以控制对某个对象的访问。代理类负责为委托类预处理消息，过滤消息并转发消息，以及进行消息被委托类执行后的后续处理。</p><p>##jdk动态代理##</p><p>###原理###<br>jdk动态代理基于接口实现，其目的是在动态运行时，创建一个代理对象，让其去实现接口中的方法，并且可以在对该方法进行一些修饰（增强功能，打印日志等，spring aop就是运用动态代理实现的）。</p><p>###步骤###<br>1、需要动态代理的接口</p><pre><code>public interface person {    public String sayHello(String name);}</code></pre><p>2、需要代理的对象</p><pre><code>public class student implements person {    @Override    public String sayHello(String name) {        return &quot;hello,my name is&quot;+name;    }}</code></pre><p>3、实际处理的类</p><pre><code>import java.lang.reflect.InvocationHandler;import java.lang.reflect.Method;import java.lang.reflect.Proxy;import net.sf.cglib.proxy.Enhancer;import net.sf.cglib.proxy.MethodInterceptor;import net.sf.cglib.proxy.MethodProxy;public class invactionhandlerimp implements InvocationHandler{    private Object student;    public invactionhandlerimp(Object student) {        super();        this.student = student;    }    @Override    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {        System.out.println(&quot;调用之前，我要说啥&quot;);        System.out.println(&quot;Method&quot;+method);        Object returnValue = method.invoke(this.student, args);        System.out.println(&quot;调用之后，我要做什么&quot;);        return returnValue;    }    public static void main(String[] args) {        person student = new student();        //传入代理的对象        invactionhandlerimp demo = new invactionhandlerimp(new student());        //将代理接口指向实际处理的对象，通过Proxy.newProxyInstance可以创建出需要的代理对象        person person = (person) Proxy.newProxyInstance(student.getClass().getClassLoader(),student.getClass().getInterfaces(),demo);        String name = student.getClass().getName();        System.out.println(name);        System.out.println(person.sayHello(&quot;ydc&quot;));    }}</code></pre><p>4、输出内容</p><pre><code>com.sun.proxy.$Proxy0调用之前，我要说啥Methodpublic abstract java.lang.String person.sayHello(java.lang.String)调用之后，我要做什么hello,my name isydc</code></pre>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;##什么是代理&lt;br&gt;代理是一种常用的设计模式，其目的就是为其他对象提供一个代理以控制对某个对象的访问。代理类负责为委托类预处理消息，过滤消息并转发消息，以及进行消息被委托类执行后的后续处理。&lt;/p&gt;
-&lt;p&gt;##jdk动态代理&lt;/p&gt;
-&lt;p&gt;###原理&lt;br&gt;jdk动态代理
+        &lt;p&gt;##什么是代理##&lt;br&gt;代理是一种常用的设计模式，其目的就是为其他对象提供一个代理以控制对某个对象的访问。代理类负责为委托类预处理消息，过滤消息并转发消息，以及进行消息被委托类执行后的后续处理。&lt;/p&gt;
+&lt;p&gt;##jdk动态代理##&lt;/p&gt;
+&lt;p&gt;###原理###&lt;br&gt;
       
     
     </summary>
